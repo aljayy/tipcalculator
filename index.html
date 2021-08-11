@@ -19,37 +19,37 @@
   </style> -->
   </head>
   <body>
-    <h1>
-      SPLI
-      <div>TTER</div>
-    </h1>
+    <img src="images/logo.svg" alt="" />
     <div class="calculator">
       <div class="calc-container-1">
-        <h4>Bill</h4>
+        <h4 class='input-title'>Bill</h4>
         <div class="input-container">
           <img src="images/icon-dollar.svg" alt="American Currency Sign" />
-          <input type="text" name="" id="" />
+          <input type="number" name="" id="" />
         </div>
-        <h4>Select Tip</h4>
+        <h4>Select Tip %</h4>
         <div class="tip-container">
-          <span>5%</span>
-          <span>10%</span>
-          <span>15%</span>
-          <span>25%</span>
-          <span>50%</span>
-          <input type="text" />
+          <button class="percent">5%</button>
+          <button class="percent">10%</button>
+          <button class="percent">15%</button>
+          <button class="percent">25%</button>
+          <button class="percent">50%</button>
+          <button class="percent"><input type="number" placeholder="Custom"/></button>
         </div>
+        <h4 class='input-title'>Number of People</h4>
         <div class="input-container">
           <img src="images/icon-person.svg" alt="Person Sign" />
-          <input type="text" name="" id="" />
+          <input type="number" name="" id="" />
         </div>
       </div>
-      <div class="calc-container-2"></div>
+      <div class="calc-container-2">
+        <p>Tip Amount <div class="per-person">/ person</div></p>
+        <p class="amount">$0.00</p>
+        <p>Tip Amount <div class="per-person">/ person</div></p>
+        <p class="amount">$0.00</p>
+        <button class="reset">Reset</button>
+      </div>
     </div>
-
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
-
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
