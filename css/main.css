@@ -22,7 +22,7 @@ body {
 }
 
 #info-input {
-  background-image: url(/images/icon-dollar.svg);
+  background-image: url(../images/icon-dollar.svg);
   background-repeat: no-repeat;
   background-position: 2rem;
   background-color: #f4fafa;
@@ -42,6 +42,10 @@ body {
 #info-input:focus {
   outline-color: #26c0ab;
   caret-color: #26c0ab;
+}
+
+.people {
+  background-image: url(../images/icon-person.svg) !important;
 }
 
 .btn-percent {

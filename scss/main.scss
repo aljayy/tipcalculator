@@ -35,7 +35,7 @@ body {
 }
 
 #info-input {
-  background-image: url(/images/icon-dollar.svg);
+  background-image: url(../images/icon-dollar.svg);
   background-repeat: no-repeat;
   background-position: 2rem;
   background-color: $input-bg;
@@ -57,6 +57,9 @@ body {
   }
 }
 
+.people {
+  background-image: url(../images/icon-person.svg) !important;
+}
 .btn-percent {
   background-color: $btn-primary;
   border-radius: 0.5rem;
