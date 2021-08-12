@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+// Reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Variables
+$main-bg: hsl(185, 41%, 84%);
+$input-bg: hsl(189, 41%, 97%);
+$input-text: hsl(183, 100%, 15%);
+$btn-primary: hsl(183, 100%, 15%);
+$btn-focus: hsl(172, 67%, 45%);
+$input-outline: hsl(172, 67%, 45%);
+$text-primary: hsl(186, 14%, 43%);
+$white: hsl(0, 0%, 100%);
+$spacemono: "Space Mono", sans-serif;
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $main-bg;
+  font-family: $spacemono;
+  font-size: 2.4rem;
+}
+
+//Reusable Classes
+.input-title {
+  color: $text-primary;
+  font-size: 1.6rem;
+}
+
+#info-input {
+  background-image: url(/images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 2rem;
+  background-color: $input-bg;
+  border-style: none;
+  border-radius: 0.5rem;
+  color: $input-text;
+  font-family: $spacemono;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 1.2rem 0 4rem 0;
+  padding: 0 2rem 0 2rem;
+  text-align: right;
+  width: 100%;
+  height: 5rem;
+
+  &:focus {
+    outline-color: $input-outline;
+  }
+}
+
+.btn-percent {
+  background-color: $btn-primary;
+  border-radius: 0.5rem;
+  border-style: none;
+  color: $white;
+  font-family: $spacemono;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 4.6rem;
+  width: 14.5rem;
+
+  &:focus {
+    background-color: $btn-focus;
+    color: $btn-primary;
+    caret-color: $input-outline;
+  }
+}
+
+#custom-percent {
+  background-color: $input-bg;
+  border-radius: 0.5rem;
+  border-style: none;
+  font-family: $spacemono;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 4.6rem;
+  text-align: right;
+  padding-right: 2rem;
+  width: 14.5rem;
+
+  &:focus {
+    outline-color: $btn-focus;
+    color: $btn-primary;
+    caret-color: $input-outline;
+  }
+}
+
+// Regular Styling
+#logo {
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.calculator {
+  background-color: $white;
+  border-radius: 3rem;
+  margin-top: 4rem;
+  padding: 3.2rem;
+}
+
+.tip-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.9rem;
+}

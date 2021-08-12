@@ -11,6 +11,8 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="css/main.css">
+
     <title>Tip Calculator App</title>
 
     <!-- <style>
@@ -19,28 +21,22 @@
   </style> -->
   </head>
   <body>
-    <img src="images/logo.svg" alt="" />
+    <img src="images/logo.svg" alt="Logo" id="logo"/>
     <div class="calculator">
       <div class="calc-container-1">
         <h4 class='input-title'>Bill</h4>
-        <div class="input-container">
-          <img src="images/icon-dollar.svg" alt="American Currency Sign" />
-          <input type="number" name="" id="" />
-        </div>
-        <h4>Select Tip %</h4>
+        <input type="number" name="" id="info-input" />
+        <h4 class='input-title'>Select Tip %</h4>
         <div class="tip-container">
-          <button class="percent">5%</button>
-          <button class="percent">10%</button>
-          <button class="percent">15%</button>
-          <button class="percent">25%</button>
-          <button class="percent">50%</button>
-          <button class="percent"><input type="number" placeholder="Custom"/></button>
+          <button class="btn-percent">5%</button>
+          <button class="btn-percent">10%</button>
+          <button class="btn-percent">15%</button>
+          <button class="btn-percent">25%</button>
+          <button class="btn-percent">50%</button>
+          <input type="number" name="" id="custom-percent" placeholder="Custom">
         </div>
         <h4 class='input-title'>Number of People</h4>
-        <div class="input-container">
-          <img src="images/icon-person.svg" alt="Person Sign" />
-          <input type="number" name="" id="" />
-        </div>
+        <input type="number" name="" id="info-input" />
       </div>
       <div class="calc-container-2">
         <p>Tip Amount <div class="per-person">/ person</div></p>
