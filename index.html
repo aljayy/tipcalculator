@@ -11,7 +11,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
 
     <title>Tip Calculator App</title>
 
@@ -21,27 +21,41 @@
   </style> -->
   </head>
   <body>
-    <img src="images/logo.svg" alt="Logo" id="logo"/>
+    <img src="images/logo.svg" alt="Logo" id="logo" />
     <div class="calculator">
       <div class="calc-container-1">
-        <h4 class='input-title'>Bill</h4>
+        <h4 class="input-title">Bill</h4>
         <input type="number" name="" id="info-input" />
-        <h4 class='input-title'>Select Tip %</h4>
+        <h4 class="input-title">Select Tip %</h4>
         <div class="tip-container">
           <button class="btn-percent">5%</button>
           <button class="btn-percent">10%</button>
           <button class="btn-percent">15%</button>
           <button class="btn-percent">25%</button>
           <button class="btn-percent">50%</button>
-          <input type="number" name="" id="custom-percent" placeholder="Custom">
+          <input
+            type="number"
+            name=""
+            id="custom-percent"
+            placeholder="Custom"
+          />
         </div>
-        <h4 class='input-title'>Number of People</h4>
-        <input type="number" name="" id="info-input" class='people' />
+        <div class="error-container">
+          <h4 class="input-title">Number of People</h4>
+          <h4 class="input-title error-message">Can't be zero</h4>
+        </div>
+        <input type="number" name="" id="info-input" class="people" />
       </div>
       <div class="calc-container-2">
-        <p>Tip Amount <div class="per-person">/ person</div></p>
+        <div>
+          Tip Amount
+          <p class="per-person">/ person</p>
+        </div>
         <p class="amount">$0.00</p>
-        <p>Tip Amount <div class="per-person">/ person</div></p>
+        <div>
+          Tip Amount
+          <p class="per-person">/ person</p>
+        </div>
         <p class="amount">$0.00</p>
         <button class="reset">Reset</button>
       </div>

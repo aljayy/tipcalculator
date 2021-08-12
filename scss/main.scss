@@ -60,6 +60,7 @@ body {
 .people {
   background-image: url(../images/icon-person.svg) !important;
 }
+
 .btn-percent {
   background-color: $btn-primary;
   border-radius: 0.5rem;
@@ -115,4 +116,55 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-bottom: 3.9rem;
+}
+
+.error-container {
+  display: flex;
+  justify-content: space-between;
+
+  .error-message {
+    color: red;
+    display: none;
+  }
+}
+
+.calc-container-2 {
+  background-color: $btn-primary;
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4.4rem 2.4rem 2.4rem 2.4rem;
+  row-gap: 3rem;
+
+  div {
+    color: $white;
+    font-size: 1.6rem;
+
+    .per-person {
+      color: $text-primary;
+      font-size: 1.4rem;
+    }
+  }
+
+  .amount {
+    color: $btn-focus;
+    font-size: 2.8rem;
+    font-weight: 700;
+    justify-self: end;
+  }
+
+  .reset {
+    background-color: $btn-focus;
+    border-radius: 0.5rem;
+    border-style: none;
+    color: $btn-primary;
+    font-family: $spacemono;
+    font-size: 2rem;
+    font-weight: 700;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+  }
 }
