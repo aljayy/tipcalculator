@@ -53,6 +53,7 @@ body {
 
   &:focus {
     outline-color: $input-outline;
+    caret-color: $input-outline;
   }
 }
 
@@ -70,7 +71,6 @@ body {
   &:focus {
     background-color: $btn-focus;
     color: $btn-primary;
-    caret-color: $input-outline;
   }
 }
 
@@ -78,6 +78,7 @@ body {
   background-color: $input-bg;
   border-radius: 0.5rem;
   border-style: none;
+  color: $btn-primary;
   font-family: $spacemono;
   font-size: 2rem;
   font-weight: 700;
@@ -88,7 +89,6 @@ body {
 
   &:focus {
     outline-color: $btn-focus;
-    color: $btn-primary;
     caret-color: $input-outline;
   }
 }
