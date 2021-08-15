@@ -25,7 +25,13 @@
     <div class="calculator">
       <div class="calc-container-1">
         <h4 class="input-title">Bill</h4>
-        <input type="number" name="" id="info-input" />
+        <input
+          type="number"
+          name=""
+          id="info-input-1"
+          class="info-input bill-amount"
+          placeholder="0"
+        />
         <h4 class="input-title">Select Tip %</h4>
         <div class="tip-container">
           <button class="btn-percent">5%</button>
@@ -42,21 +48,27 @@
         </div>
         <div class="error-container">
           <h4 class="input-title">Number of People</h4>
-          <h4 class="input-title error-message">Can't be zero</h4>
+          <h4 class="input-title error-message" id="error">Can't be zero</h4>
         </div>
-        <input type="number" name="" id="info-input" class="people" />
+        <input
+          type="number"
+          name=""
+          id="info-input-2"
+          class="info-input people-amount"
+          placeholder="0"
+        />
       </div>
       <div class="calc-container-2">
         <div>
           Tip Amount
           <p class="per-person">/ person</p>
         </div>
-        <p class="amount">$0.00</p>
+        <p class="amount" id="tip">$0.00</p>
         <div>
-          Tip Amount
+          Total
           <p class="per-person">/ person</p>
         </div>
-        <p class="amount">$0.00</p>
+        <p class="amount" id="total">$0.00</p>
         <button class="reset">Reset</button>
       </div>
     </div>
@@ -65,4 +77,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
   </body>
+  <script src="/script.js"></script>
 </html>

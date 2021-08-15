@@ -7,6 +7,17 @@
   padding: 0;
 }
 
+// Removing Spinner
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 // Variables
 $main-bg: hsl(185, 41%, 84%);
 $input-bg: hsl(189, 41%, 97%);
@@ -34,7 +45,7 @@ body {
   font-size: 1.6rem;
 }
 
-#info-input {
+.info-input {
   background-image: url(../images/icon-dollar.svg);
   background-repeat: no-repeat;
   background-position: 2rem;
@@ -57,7 +68,7 @@ body {
   }
 }
 
-.people {
+.people-amount {
   background-image: url(../images/icon-person.svg) !important;
 }
 
@@ -125,6 +136,14 @@ body {
   .error-message {
     color: red;
     display: none;
+  }
+}
+
+.error-outline {
+  border: 2.5px red solid;
+
+  &:focus {
+    outline-color: red;
   }
 }
 
