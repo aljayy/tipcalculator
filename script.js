@@ -77,6 +77,7 @@ peopleInput.addEventListener(`input`, calculateAmounts);
 
 reset.addEventListener(`click`, function () {
   billInput.value = ``;
+  billValue = ``;
   for (let i = 0; i < btn.length; i++) {
     btn[i].classList.remove(`btn-focus`);
   }
