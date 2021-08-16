@@ -83,10 +83,15 @@ body {
   height: 4.6rem;
   width: 14.5rem;
 
-  &:focus {
-    background-color: $btn-focus;
-    color: $btn-primary;
-  }
+  // &:focus {
+  //   background-color: $btn-focus;
+  //   color: $btn-primary;
+  // }
+}
+
+.btn-focus {
+  background-color: $btn-focus;
+  color: $btn-primary;
 }
 
 #custom-percent {

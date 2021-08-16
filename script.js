@@ -9,15 +9,32 @@ const error = document.querySelector(`#error`);
 
 let billValue, percentValue, peopleValue, tipValue;
 
+const calculateAmounts = function () {
+  if (peopleInput.value < 1) {
+    error.style.display = `block`;
+    peopleInput.classList.add(`error-outline`);
+  } else if (peopleInput.value >= 1) {
+    error.style.display = `none`;
+    peopleInput.classList.remove(`error-outline`);
+    peopleValue = Number(peopleInput.value);
+    tipValue = billValue * (percentValue / peopleValue);
+    tip.textContent = `$${tipValue}`;
+    total.textContent = `$${billValue / peopleValue + tipValue}`;
+  }
+};
+
 billInput.addEventListener(`input`, function () {
+  if (percentValue) {
+    console.log(true);
+  }
   billValue = Number(billInput.value);
 });
 
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener(`click`, function () {
-    // percentValue = btn[i].textContent;
     if (btn[i].textContent === `5%`) {
       percentValue = 0.05;
+      console.log(percentValue);
     } else if (btn[i].textContent === `10%`) {
       percentValue = 0.1;
     } else if (btn[i].textContent === `15%`) {
@@ -30,16 +47,4 @@ for (let i = 0; i < btn.length; i++) {
   });
 }
 
-peopleInput.addEventListener(`input`, function () {
-  if (peopleInput.value >= 1) {
-    error.style.display = `none`;
-    peopleInput.classList.remove(`error-outline`);
-    peopleValue = Number(peopleInput.value);
-    tipValue = billValue * (percentValue / peopleValue);
-    tip.textContent = `$${tipValue}`;
-    total.textContent = `$${billValue / peopleValue + tipValue}`;
-  } else if (peopleInput.value < 1) {
-    error.style.display = `block`;
-    peopleInput.classList.add(`error-outline`);
-  }
-});
+peopleInput.addEventListener(`input`, calculateAmounts);
