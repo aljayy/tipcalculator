@@ -98,12 +98,16 @@ body {
   display: block;
   margin: auto;
   margin-top: 5rem;
+  margin-bottom: 4rem;
 }
 
 .calculator {
   background-color: white;
-  border-radius: 3rem;
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  margin: auto;
   margin-top: 4rem;
+  max-width: 92rem;
   padding: 3.2rem;
 }
 
@@ -181,5 +185,42 @@ body {
   height: 5rem;
   margin-top: 1rem;
   text-transform: uppercase;
+}
+
+@media (min-width: 1000px) {
+  #logo {
+    margin-top: 16.3rem;
+    margin-bottom: 8.8rem;
+  }
+  .calculator {
+    border-radius: 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .calculator .calc-container-1 {
+    max-width: 46rem;
+    padding-left: 2rem;
+    padding-right: 5rem;
+  }
+  .calculator .calc-container-1 .tip-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .calculator .calc-container-1 .tip-container .btn-percent {
+    width: 11.5rem;
+  }
+  .calculator .calc-container-1 .tip-container #custom-percent {
+    width: 11.5rem;
+  }
+  .calculator .calc-container-2 {
+    padding-left: 4rem;
+  }
+  .calculator .calc-container-2 .reset {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
