@@ -12,16 +12,20 @@ const reset = document.querySelector(`.reset`);
 let billValue, percentValue, peopleValue, tipValue;
 
 const calculateAmounts = function () {
-  if (peopleInput.value < 1) {
+  peopleValue = Number(peopleInput.value);
+  console.log(peopleValue);
+  if (peopleValue < 1) {
     error.style.display = `block`;
     peopleInput.classList.add(`error-outline`);
-  } else if (peopleInput.value >= 1) {
-    error.style.display = `none`;
-    peopleInput.classList.remove(`error-outline`);
-    peopleValue = Number(peopleInput.value);
+  } else if (billValue > -1 && percentValue > -1 && peopleValue >= 1) {
     tipValue = (billValue * (percentValue / 100)) / peopleValue;
     tip.textContent = `$${tipValue.toFixed(2)}`;
     total.textContent = `$${(billValue / peopleValue + tipValue).toFixed(2)}`;
+  }
+
+  if (peopleInput.value >= 1) {
+    error.style.display = `none`;
+    peopleInput.classList.remove(`error-outline`);
   }
 };
 
