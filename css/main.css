@@ -187,40 +187,61 @@ body {
   text-transform: uppercase;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 920px) {
   #logo {
-    margin-top: 16.3rem;
+    margin-top: 10rem;
     margin-bottom: 8.8rem;
   }
   .calculator {
     border-radius: 3rem;
+    -webkit-box-shadow: 1rem 1rem 10rem rgba(0, 0, 0, 0.25);
+            box-shadow: 1rem 1rem 10rem rgba(0, 0, 0, 0.25);
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 24rem;
   }
   .calculator .calc-container-1 {
     max-width: 46rem;
     padding-left: 2rem;
     padding-right: 5rem;
   }
+  .calculator .calc-container-1 .input-title {
+    margin-bottom: 2rem;
+  }
   .calculator .calc-container-1 .tip-container {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
   .calculator .calc-container-1 .tip-container .btn-percent {
+    font-size: 2.5rem;
+    font-weight: 600;
     width: 11.5rem;
   }
   .calculator .calc-container-1 .tip-container #custom-percent {
+    font-size: 2.5rem;
+    padding-right: 1rem;
     width: 11.5rem;
   }
   .calculator .calc-container-2 {
     padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .calculator .calc-container-2 div {
+    padding-top: 1.5rem;
+  }
+  .calculator .calc-container-2 .amount {
+    font-size: 5rem;
+    vertical-align: top;
   }
   .calculator .calc-container-2 .reset {
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-bottom: 2rem;
+  }
+  .info-input {
+    margin-top: 0rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
