@@ -118,11 +118,10 @@ body {
 
 .calculator {
   background-color: $white;
-  border-top-right-radius: 3rem;
-  border-top-left-radius: 3rem;
+  border-radius: 3rem;
   margin: auto;
   margin-top: 4rem;
-  max-width: 92rem;
+  max-width: 37.5rem;
   padding: 3.2rem;
 }
 
@@ -204,6 +203,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 24rem;
+    max-width: 92rem;
 
     .calc-container-1 {
       max-width: 46rem;
@@ -234,6 +234,7 @@ body {
     .calc-container-2 {
       padding-left: 4rem;
       padding-right: 4rem;
+      row-gap: 0;
 
       div {
         padding-top: 1.5rem;
