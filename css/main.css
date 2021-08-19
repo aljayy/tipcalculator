@@ -29,6 +29,11 @@ body {
 .input-title {
   color: #5e7a7d;
   font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.input-margin {
+  margin-bottom: 2rem;
 }
 
 .info-input {
@@ -42,7 +47,7 @@ body {
   font-family: "Space Mono", sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
-  margin: 1.2rem 0 4rem 0;
+  margin: 0rem 0 4rem 0;
   padding: 0 2rem 0 2rem;
   text-align: right;
   width: 100%;
@@ -134,7 +139,8 @@ body {
 }
 
 .error-outline {
-  border: 2.5px red solid;
+  outline-style: auto;
+  outline-color: red;
 }
 
 .error-outline:focus {
@@ -206,9 +212,6 @@ body {
     max-width: 46rem;
     padding-left: 2rem;
     padding-right: 5rem;
-  }
-  .calculator .calc-container-1 .input-title {
-    margin-bottom: 2rem;
   }
   .calculator .calc-container-1 .tip-container {
     -ms-grid-columns: (1fr)[3];

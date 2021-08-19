@@ -43,6 +43,11 @@ body {
 .input-title {
   color: $text-primary;
   font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.input-margin {
+  margin-bottom: 2rem;
 }
 
 .info-input {
@@ -56,7 +61,7 @@ body {
   font-family: $spacemono;
   font-size: 2.2rem;
   font-weight: 700;
-  margin: 1.2rem 0 4rem 0;
+  margin: 0rem 0 4rem 0;
   padding: 0 2rem 0 2rem;
   text-align: right;
   width: 100%;
@@ -143,7 +148,8 @@ body {
 }
 
 .error-outline {
-  border: 2.5px red solid;
+  outline-style: auto;
+  outline-color: red;
 
   &:focus {
     outline-color: red;
@@ -209,10 +215,6 @@ body {
       max-width: 46rem;
       padding-left: 2rem;
       padding-right: 5rem;
-
-      .input-title {
-        margin-bottom: 2rem;
-      }
 
       .tip-container {
         grid-template-columns: repeat(3, 1fr);
