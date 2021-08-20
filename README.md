@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop Screenshot](/images/desktop.png)
-[Mobile Screenshot](/images/mobile.png)
+[Desktop Screenshot](/Users/alanjimenez/Desktop/frontendmentor.io/tip-calculator/images/desktop.png)
+[Mobile Screenshot](/Users/alanjimenez/Desktop/frontendmentor.io/tip-calculator/images/mobile.png)
 
 ### Links
 
