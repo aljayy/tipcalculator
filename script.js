@@ -13,7 +13,6 @@ let billValue, percentValue, peopleValue, tipValue;
 
 const calculateAmounts = function () {
   peopleValue = Number(peopleInput.value);
-  console.log(peopleValue);
   if (peopleValue < 1) {
     error.style.display = `block`;
     peopleInput.classList.add(`error-outline`);
