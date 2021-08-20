@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/aljayy/tipcalculator)
-- Live Site URL: [](https://aljayy.github.io/tipcalculator/)
+- Solution URL: [Solution](https://github.com/aljayy/tipcalculator)
+- Live Site URL: [Live Site](https://aljayy.github.io/tipcalculator/)
 
 ## My process
 
