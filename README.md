@@ -25,13 +25,14 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop Screenshot](/Users/alanjimenez/Desktop/frontendmentor.io/tip-calculator/images/desktop.png)
-[Mobile Screenshot](/Users/alanjimenez/Desktop/frontendmentor.io/tip-calculator/images/mobile.png)
+-[Desktop Screenshot](/Users/alanjimenez/Desktop/frontendmentor.io/tip-calculator/images/desktop.png)
+
+-[Mobile Screenshot](/Users/alanjimenez/Desktop/frontendmentor.io/tip-calculator/images/mobile.png)
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/aljayy/tipcalculator)
-- Live Site URL: [Live Site](https://aljayy.github.io/tipcalculator/)
+- [Solution](https://github.com/aljayy/tipcalculator)
+- [Live Site](https://aljayy.github.io/tipcalculator/)
 
 ## My process
 
